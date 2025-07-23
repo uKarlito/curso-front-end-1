@@ -9,8 +9,15 @@
 <body>
     <header class="cabecalho">
         <nav class="cabecalho__menu">
+            <!--
+                Se acostume a sempre usar ./ ou ../
+                Se esse arquivo tivesse dentro de uma pasta, ia quebrar
+                na versão hospedada
+            -->
             <a class="cabecalho__menu__link" href="index.html">Home</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+            <!-- Faltou fechar o nav -->
+        </nav>
     </header>
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
@@ -19,7 +26,8 @@
             <p class="apresentacao__conteudo_texto">Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores ipsum delis forum birol parela maxime infena. Excepteur sint occaecat cupidatat non.</p>
         </section>
         <div class="apresentacao__imagem">
-        <img src="./assets/programando.png" alt="Mulher programando">
+            <!-- Faltou identação na img -->
+            <img src="./assets/programando.png" alt="Mulher programando">
         </div>
     </main>
     <footer class="rodape">

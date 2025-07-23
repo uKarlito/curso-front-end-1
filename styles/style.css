@@ -1,3 +1,15 @@
+/*
+    Não existe nenhum motivo pra importar fontes no CSS
+    O navegador vai ter que:
+    - Baixar o HTML
+    - Ler o HTML
+    - Baixar o CSS
+    - Ler o CSS
+    - Baixar a fonte
+    - Ler a fonte
+    - Re-renderizar todo HTML
+    Sempre importe via link no HTML (posso mostrar como faz)
+*/
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
@@ -12,16 +24,20 @@
 * {
     margin: 0;
     padding: 0;
+    /* box-sizing: border-box; */
     
 }
 
 body {
+    /* Essa regra pode subir pro all selector "*" */
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
 
 .cabecalho {
+    /* padding com % gera valores imprevisíveis e
+    geralmente não é necessário de verdade */
     padding: 2% 0% 0% 15%;
 }
 
@@ -29,6 +45,15 @@ body {
     display: flex;
     gap: 80px;
 }
+
+/* 
+    Você declarou `text-decoration: none` duas vezes
+    Você pode fazer isso no element, afetando todos os links
+
+    a {
+        text-decoration: none;
+    }
+ */
 
 .cabecalho__menu__link {
     font-family: var(--fonte-secundaria);
@@ -52,17 +77,40 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    /* Os gaps e paddings estão com muitos números quebrados,
+    se não souber o valor, chute que é 4 ou algum múltiplo
+    de 8 */
     gap: 82px;
 }
 
 .apresentacao__conteudo {
     width: 50%;
+    /* 
+        O
+        display: grid;
+
+        Substituí o display: flex; e o flex-direction.
+        grid -> coluna por padrão
+        flex -> linha por padrão
+    */
     display: flex;
     flex-direction: column;
     gap: 40px
 }
 
 .apresentacao__conteudo__titulo {
+    /* 
+        Você declarou font-size + font-family 6 vezes nesse
+        documento. Defina quais são seus tipos e crie classes
+        pra eles, ex:
+
+        .heading {}
+        .subheading {}
+        .title {}
+        .subtitle {}
+        .body {}
+        .small {}
+    */
     font-size: 2.25rem;
     font-family: var(--fonte-principal);
 }
