@@ -13,6 +13,8 @@
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
             <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
+        <!-- Faltou fechar o nav -->
+        </nav>
     </header> 
     <main class="apresentacao">
         <section class="apresentacao__conteudo">
@@ -21,9 +23,25 @@
             <p class="apresentacao__conteudo_texto">Olá! Sou Carlos André Silva, desenvolvedor Front-end com
                 especialidade em React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem em prática boas
                 ideias. Vamos conversar?
+            <!-- Faltou fechar o p -->
+            </p>
             <div class="apresentacao__links">
                 <h2 class="apresentacao__links__subtitulo">Acesse minhas redes:</h2>
                 <a class="apresentacao__links__navegacao" href="https://github.com/uKarlito">
+                    <!--
+                        Como já tem texto esse link, a imagem decorativa não precisa de alt
+                        Só o imbecil do professor de front que colocaria, mas uma pessoa
+                        com leitor de tela ouviria:
+                        "ícone do GitHub, Github, link"
+                        Pra imagens decorativas use:
+                        
+                        <img src="./img.png" alt="" role="presentation">
+                    -->
+                    <!-- 
+                        Usar imagens pra esse tipo de ícone tem perda de qualidade, principalmente
+                        no tamanho que você tá usando. Dê preferência à fontawesome ou svg.
+                        Você não quer perder qualidade com ícones
+                     -->
                     <img src="./assets/github.png" alt="Ícone do GitHub">
                     GitHub
                 </a>
@@ -37,6 +55,11 @@
                 </a>
             </div>
         </section>
+        <!--
+            A identação pode melhorar bastante:
+            Na dúvida, use shift + alt + F (ou option + shift + F)
+            Ele vai formatar seu código automáticamente (você precisa definir um formatter)
+        -->
             <img class="apresentacao__imagem" src="./assets/programando.png" alt="Mulher programando">
     </main>
     <footer class="rodape">
