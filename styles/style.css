@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 :root {
-    --cor-primaria: #000000;
-    --cor-secundaria: #ffffff;
-    --cor-terciaria: #22D4FD;
-    --cor-hover: #161616;
+    --cor-primaria: #151515;
+    --cor-secundaria: #EEEEEE;
+    --cor-terciaria: #C73659;
+    --cor-hover: #A91D3A;
+    --cor-cinza: #dfdfdf;
 
     --fonte-principal: 'krona one', sans-serif;
     --fonte-secundaria: 'montserrat', sans-serif;
@@ -12,11 +13,10 @@
 * {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
 
 body {
-    box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
@@ -47,6 +47,13 @@ body {
 .titulo-destaque {
     color: var(--cor-terciaria);
 }
+
+.texto-destaque {
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--cor-secundaria);
+}
 .apresentacao {
     padding: 5% 15%;
     display: flex;
@@ -71,6 +78,15 @@ body {
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
 }   
+
+.apresentacao__conteudo_citacao {
+    font-size: 1.3rem;
+    font-family: var(--fonte-secundaria);
+    font-style: italic;
+    color: var(--cor-cinza);
+    font-weight: 200;
+}
+    
 
 .apresentacao__links {
     display: flex;
@@ -111,7 +127,7 @@ body {
 
 .rodape {
     padding: 24px;
-    color: var(--cor-primaria);;
+    color: var(--cor-secundaria);
     background-color: var(--cor-terciaria);
     text-align: center;
     font-family: var(--fonte-secundaria);
