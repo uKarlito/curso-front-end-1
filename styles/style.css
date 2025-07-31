@@ -2,14 +2,15 @@
 
 :root {
     --cor-primaria: #151515;
-    --cor-secundaria: #EEEEEE;
-    --cor-terciaria: #C73659;
-    --cor-hover: #A91D3A;
-    --cor-cinza: #dfdfdf;
+    --cor-secundaria: #f8f5ef;
+    --cor-terciaria: #be102d;
+    --cor-hover: #13152c;
+    --cor-cinza: #e7e5e5;
 
     --fonte-principal: 'krona one', sans-serif;
     --fonte-secundaria: 'montserrat', sans-serif;
 }
+
 * {
     margin: 0;
     padding: 0;
@@ -17,8 +18,13 @@
 }
 
 body {
-    background-color: var(--cor-primaria);
+    background: #07091a;
     color: var(--cor-secundaria);
+    background: linear-gradient(90deg, #07091a 0%, #2c0a0c 100%), url('./assets/cobweb.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
 .cabecalho {
@@ -34,7 +40,7 @@ body {
     font-family: var(--fonte-secundaria);
     color: var(--cor-terciaria);
     text-decoration: none;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: 500;
     border-bottom: 2px solid #1b1b1b;
     padding: 11px 12px;
@@ -54,6 +60,7 @@ body {
     font-weight: 700;
     color: var(--cor-secundaria);
 }
+
 .apresentacao {
     padding: 5% 15%;
     display: flex;
@@ -77,16 +84,15 @@ body {
 .apresentacao__conteudo_texto {
     font-size: 1.5rem;
     font-family: var(--fonte-secundaria);
-}   
+}
 
 .apresentacao__conteudo_citacao {
     font-size: 1.3rem;
     font-family: var(--fonte-secundaria);
     font-style: italic;
     color: var(--cor-cinza);
-    font-weight: 200;
+    font-weight: 320;
 }
-    
 
 .apresentacao__links {
     display: flex;
